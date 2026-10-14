@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A welcoming guesthouse in Durban. Explore comfortable rooms, facilities and send a booking enquiry directly to us.">
+  <title>Coastal Nest Guesthouse | Durban</title>
+  <style>
+    :root{--navy:#102b3a;--teal:#167d82;--sand:#f5f0e7;--ink:#20313a;--muted:#62727a;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit}
+    .topbar{padding:13px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff}
+    .brand{font-weight:800;letter-spacing:.04em;color:var(--navy);font-size:1.15rem}
+    nav{display:flex;gap:22px;flex-wrap:wrap}
+    nav a{text-decoration:none;font-size:.93rem;font-weight:700}
+    .btn{display:inline-block;background:var(--teal);color:#fff;padding:13px 19px;border-radius:6px;text-decoration:none;border:0;font-weight:700;cursor:pointer}
+    .hero{min-height:520px;display:grid;align-items:center;padding:70px 7%;color:#fff;background:linear-gradient(90deg,rgba(7,25,35,.82),rgba(7,25,35,.18)),url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-copy{max-width:620px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:800;color:#c9ece7}
+    h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.04;margin:15px 0}
+    .hero p{font-size:1.1rem;max-width:540px}
+    section{padding:68px 7%}
+    .section-head{max-width:680px;margin-bottom:28px}
+    h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;color:var(--navy);margin:0 0 14px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .card{border:1px solid #e4e9e9;border-radius:12px;overflow:hidden;background:#fff}
+    .card img{width:100%;height:220px;object-fit:cover;display:block}
+    .card-body{padding:20px}
+    .card h3{margin:0 0 8px;color:var(--navy)}
+    .soft{background:var(--sand)}
+    .amenities{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+    .amenity{padding:18px;background:#fff;border-radius:9px;font-weight:700}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+    form{background:#fff;border:1px solid #e2e7e8;border-radius:12px;padding:24px}
+    label{display:block;font-weight:700;font-size:.92rem;margin:14px 0 5px}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5d8;border-radius:6px;font:inherit}
+    textarea{min-height:100px;resize:vertical}
+    .small{font-size:.86rem;color:var(--muted)}
+    footer{background:var(--navy);color:#fff;padding:30px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer p{margin:4px 0}
+    @media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.amenities{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.hero{min-height:460px}.topbar{align-items:flex-start;flex-direction:column}nav{gap:13px}}
+    @media(max-width:520px){.grid{grid-template-columns:1fr}.card img{height:230px}section{padding:48px 6%}.hero{padding:55px 6%}}
+  </style>
+</head>
+<body>
+  <!-- DEMO TEMPLATE: replace the sample name, images, details and WhatsApp number before using for a real client. -->
+  <header class="topbar">
+    <div class="brand">COASTAL NEST <span style="font-weight:400">GUESTHOUSE</span></div>
+    <nav aria-label="Main navigation">
+      <a href="#rooms">Rooms</a><a href="#facilities">Facilities</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Your relaxed Durban stay</div>
+        <h1>Feel at home.<br>Stay a little longer.</h1>
+        <p>A welcoming place to unwind, recharge and enjoy your time in Durban. Explore our rooms and send us a booking enquiry directly.</p>
+        <a class="btn" href="#contact">Enquire about a stay</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <div class="eyebrow" style="color:var(--teal)">Welcome</div>
+        <h2>A comfortable stay, made simple</h2>
+        <p class="muted">Coastal Nest is a demonstration guesthouse website. Replace this paragraph with the real property's story, location and what makes it special. Keep all claims accurate and approved by the owner.</p>
+      </div>
+    </section>
+
+    <section id="rooms" class="soft">
+      <div class="section-head">
+        <div class="eyebrow" style="color:var(--teal)">Stay your way</div>
+        <h2>Our rooms</h2>
+        <p class="muted">Sample room cards for demonstration. Confirm the actual room types, facilities and prices with the property owner before publishing.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Bright, comfortable guest bedroom">
+          <div class="card-body"><h3>Comfort Room</h3><p class="muted">A simple, relaxing space for solo travellers or couples.</p><strong>Ask us for rates</strong></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Guest bedroom with neatly made bed">
+          <div class="card-body"><h3>Deluxe Room</h3><p class="muted">A little extra space to relax after a busy day.</p><strong>Ask us for rates</strong></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80" alt="Inviting guest accommodation interior">
+          <div class="card-body"><h3>Family Stay</h3><p class="muted">A practical option for guests travelling together.</p><strong>Ask us for rates</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="facilities">
+      <div class="section-head"><div class="eyebrow" style="color:var(--teal)">Make yourself comfortable</div><h2>Facilities</h2><p class="muted">Only keep facilities that the property genuinely provides.</p></div>
+      <div class="amenities">
+        <div class="amenity">✓ Free Wi-Fi*</div><div class="amenity">✓ Secure parking*</div><div class="amenity">✓ Air conditioning*</div><div class="amenity">✓ Breakfast available*</div>
+      </div>
+      <p class="small">*Demo examples — confirm with the owner and remove any that do not apply.</p>
+    </section>
+
+    <section id="contact" class="soft">
+      <div class="two-col">
+        <div>
+          <div class="eyebrow" style="color:var(--teal)">Plan your visit</div>
+          <h2>Send a booking enquiry</h2>
+          <p>Tell us your dates and the number of guests. This demo opens WhatsApp with your enquiry prepared so the guesthouse can respond directly.</p>
+          <p><strong>Location:</strong> Durban, KwaZulu-Natal (replace with real address)</p>
+          <p><strong>WhatsApp:</strong> Replace the demo number in the code before sharing.</p>
+          <p class="small">An enquiry is not a confirmed booking. The property must confirm availability, price and booking terms.</p>
+        </div>
+        <form id="booking-form">
+          <label for="guest-name">Your name</label><input id="guest-name" name="name" required placeholder="Full name">
+          <label for="guest-phone">Your contact number</label><input id="guest-phone" name="phone" required placeholder="e.g. 07...">
+          <label for="checkin">Check-in date</label><input id="checkin" name="checkin" type="date" required>
+          <label for="checkout">Check-out date</label><input id="checkout" name="checkout" type="date" required>
+          <label for="guests">Number of guests</label><select id="guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select>
+          <label for="message">Extra details (optional)</label><textarea id="message" name="message" placeholder="Room preference or questions"></textarea>
+          <button class="btn" type="submit" style="width:100%;margin-top:18px">Send enquiry on WhatsApp</button>
+          <p id="form-note" class="small">Demo template: replace the WhatsApp number in the code before testing.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>COASTAL NEST GUESTHOUSE</strong><p>Comfortable stays in Durban</p></div>
+    <div><p>Email: replace-with-owner-email@example.com</p><p>© <span id="year"></span> Coastal Nest Guesthouse</p></div>
+  </footer>
+
+  <script>
+    // Replace 27820000000 with the owner's WhatsApp number in international format.
+    // South African example: 27821234567 (no +, spaces or leading 0).
+    const WHATSAPP_NUMBER = "27820000000";
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0,10);
+    const checkin = document.getElementById("checkin");
+    const checkout = document.getElementById("checkout");
+    checkin.min = localToday;
+    checkout.min = localToday;
+    checkin.addEventListener("change", () => {
+      checkout.min = checkin.value || localToday;
+      if (checkout.value && checkout.value <= checkin.value) checkout.value = "";
+    });
+
+    document.getElementById("booking-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (WHATSAPP_NUMBER === "27820000000") {
+        alert("Demo only: edit WHATSAPP_NUMBER in the code and enter the real guesthouse WhatsApp number.");
+        return;
+      }
+      if (checkout.value <= checkin.value) {
+        alert("Check-out must be after check-in.");
+        return;
+      }
+      const data = new FormData(event.target);
+      const message = [
+        "Hello, I would like to enquire about a booking.",
+        "Name: " + data.get("name"),
+        "Contact: " + data.get("phone"),
+        "Check-in: " + data.get("checkin"),
+        "Check-out: " + data.get("checkout"),
+        "Guests: " + data.get("guests"),
+        "Details: " + (data.get("message") || "None")
+      ].join("\n");
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
